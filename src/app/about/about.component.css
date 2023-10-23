@@ -1,0 +1,51 @@
+/*.about__container {
+  margin-top: 40px;
+}
+
+.grid-item1 > h1 {
+  padding-top: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 80px;
+}*/
+
+.container {
+  margin-right: 40px;
+  margin-top: 40px;
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+  grid-template-rows: auto auto; /* Automatically sized rows */
+  grid-gap: 20px; /* Gap between grid items */
+}
+
+.grid-item {
+  color: #fff;
+  padding: 20px;
+}
+
+/* Adjust grid item sizes for specific cells */
+.grid-item1 {
+  grid-row: 1; /* This item spans two rows */
+  grid-column: 1; /* This item spans one column */
+  text-align: left;
+  border: 2px solid #333; /* Add a border to the grid container */
+}
+
+.grid-item2 {
+  grid-row: 1; /* This item spans one row */
+  grid-column: 2; /* This item spans one column */
+  border: 2px solid #333; /* Add a border to the grid container */
+}
+
+.grid-item3 {
+  background-color: bisque;
+  grid-row: 2; /* This item spans one row */
+  grid-column: 1 / span 1; /* This item spans one column */
+  border: 2px solid #333; /* Add a border to the grid container */
+}
+.grid-item4 {
+  grid-row: 2 / span 1; /* This item spans one row */
+  grid-column: 2 / span 1; /* This item spans one column */
+  border: 2px solid #333; /* Add a border to the grid container */
+}
