@@ -57,3 +57,8 @@
   color: white;
   font-weight: bold;
 }
+
+.gambar {
+  position: flex;
+  margin-left: 60rem;
+}
